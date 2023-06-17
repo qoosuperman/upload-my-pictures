@@ -1,0 +1,4 @@
+<%= form_with(url: uploads_path, local: true, html: { id: 'image-upload-form', class: 'dropzone' }) do |form| %>
+  <%= form.file_field :image, id: 'image-input' %>
+  <%= form.submit 'Upload' %>
+<% end %>
